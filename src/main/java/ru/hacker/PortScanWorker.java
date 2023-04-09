@@ -67,7 +67,7 @@ public class PortScanWorker  implements Runnable {
         openPorts = new ArrayList<Integer>();
         System.out.println("Сканирую порты: ");
         for (Integer port : ports) {
-            System.out.print(port);
+            System.out.println(port);
             try {
                 InetSocketAddress iSA = new InetSocketAddress(inetAddress, port);
                 Socket socket = new Socket();
